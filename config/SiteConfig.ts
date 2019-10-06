@@ -3,7 +3,7 @@ export default {
 
   siteTitle: 'Wes Johnson', // Navigation and Site Title
   siteTitleAlt: 'Wes Johnson - Web, Mobile, Full-stack Development', // Alternative Site title for SEO
-  siteUrl: 'https://sterlingwes.github.com', // Domain of your site. No trailing slash!
+  siteUrl: 'http://swj.io', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteBanner: '/assets/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
   defaultBg: '/assets/bg.jpg', // default post background header
