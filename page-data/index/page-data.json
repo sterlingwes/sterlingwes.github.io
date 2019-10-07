@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-pages-index-tsx","path":"/","webpackCompilationHash":"f3ff1f48d86a5bd16d2f","result":{"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"fields":{"slug":"test-post"},"frontmatter":{"title":"Test post!","date":"01.01.2018","category":"General"},"timeToRead":1}}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
