@@ -19,7 +19,7 @@
               "10985579673-h9s09dbng7og6mbqu9p6uodlh7ag05c6.apps.googleusercontent.com",
             cookiepolicy: "single_host_origin",
             // Request scopes in addition to 'profile' and 'email'
-            scope: "email",
+            scope: "https://www.googleapis.com/auth/accesspoints",
           });
           attachSignin(document.getElementById("gsignin"));
         });
@@ -34,6 +34,7 @@
 
       function onSignIn(googleUser) {
         const authResponse = googleUser.getAuthResponse(true);
+        console.log("response", authResponse);
       }
     </script>
   </body>
