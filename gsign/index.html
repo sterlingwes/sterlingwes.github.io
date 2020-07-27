@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="google-signin-client_id"
+      content="10985579673-h9s09dbng7og6mbqu9p6uodlh7ag05c6.apps.googleusercontent.com"
+    />
+  </head>
+  <body>
+    <div id="gsignin" class="g-signin2" data-onsuccess="onSignIn"></div>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+      var googleUser = {};
+      var startApp = function () {
+        gapi.load("auth2", function () {
+          // Retrieve the singleton for the GoogleAuth library and set up the client.
+          auth2 = gapi.auth2.init({
+            client_id:
+              "10985579673-h9s09dbng7og6mbqu9p6uodlh7ag05c6.apps.googleusercontent.com",
+            cookiepolicy: "single_host_origin",
+            // Request scopes in addition to 'profile' and 'email'
+            scope: "email",
+          });
+          attachSignin(document.getElementById("gsignin"));
+        });
+      };
+
+      function attachSignin(element) {
+        console.log(element.id);
+        auth2.attachClickHandler(element, {}, onSignIn, function (error) {
+          console.error(">>>", error);
+        });
+      }
+
+      function onSignIn(googleUser) {
+        const authResponse = googleUser.getAuthResponse(true);
+      }
+    </script>
+  </body>
+</html>
