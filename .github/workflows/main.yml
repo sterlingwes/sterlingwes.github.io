@@ -16,4 +16,5 @@ jobs:
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           source-directory: public
+          auto-install: no
           build-command: echo "No build"
